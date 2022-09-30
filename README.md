@@ -1,2 +1,1 @@
-# travel
-Travel -  landing page for travel planning website
+Welcome to **Travel** -  landing page for travel planning website
