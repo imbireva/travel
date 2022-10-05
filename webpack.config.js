@@ -22,7 +22,6 @@ module.exports = ({ development }) => ({
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    assetModuleFilename: 'assets/[name][ext]',
   },
   module: {
     rules: [
@@ -37,10 +36,16 @@ module.exports = ({ development }) => ({
       {
         test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: './assets/images/[name][ext]',
+        },
       },
       {
         test: /\.(woff(2)?|eot|ttf|otf)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: './assets/fonts/[name][ext]',
+        },
       },
     ],
   },
