@@ -21,3 +21,12 @@ html {
   background-image: url(../assets/images/hero-bg.jpg);
   background-size: cover;
 }
+
+.text {
+  @include font($serif-font, 2rem, 2.4rem, 400);
+  &_hero {
+    font-weight: 700;
+    font-style: italic;
+    color: $text-light-color;
+  }
+}
