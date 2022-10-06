@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -16,8 +20,14 @@ h1 {
   margin: 0.67em 0;
 }
 
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 img {
@@ -35,6 +45,7 @@ input {
 
 button {
   text-transform: none;
+  border: none;
 }
 
 button,
@@ -64,7 +75,6 @@ fieldset {
 }
 
 legend {
-  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
