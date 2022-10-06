@@ -1,0 +1,10 @@
+.logo {
+  background-image: url(../assets/images/logo-icon.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 36px;
+  &__title {
+    margin: 0;
+    @include font($logo-font, 3.2rem, 3.9rem, 600);
+  }
+}
