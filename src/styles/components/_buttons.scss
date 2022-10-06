@@ -1,0 +1,18 @@
+.btn {
+  width: 228px;
+  height: 59px;
+  background-color: $buttons-bg-color;
+  border-radius: 10px;
+  @include font($sans-serif-font, 2.4rem, 3.2rem, 500);
+  color: $text-light-color;
+  box-shadow: $btn-box-shadow;
+  &:hover {
+    cursor: pointer;
+  }
+  &_login {
+    width: 103px;
+    height: 41px;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+}
