@@ -1,0 +1,22 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.header-hero-bg {
+  background-image: url(../assets/images/hero-bg.jpg);
+  background-size: cover;
+}
