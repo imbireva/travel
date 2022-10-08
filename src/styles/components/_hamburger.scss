@@ -1,0 +1,33 @@
+.hamburger {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  &:hover {
+    cursor: pointer;
+  }
+  &_open .hamburger__line_top {
+    transform: rotate(-45deg);
+  }
+  &_open .hamburger__line_center {
+    display: none;
+  }
+  &_open .hamburger__line_bottom {
+    transform: rotate(45deg);
+  }
+}
+
+.hamburger__line {
+  position: absolute;
+  top: 18.5px;
+  width: 40px;
+  height: 3px;
+  background-color: $light-color;
+  border-radius: 2px;
+  transition: .2s;
+  &_top {
+    transform: translateY(-8px);
+  }
+  &_bottom {
+    transform: translateY(8px);
+  }
+}
