@@ -1,8 +1,8 @@
 .title {
   @include font($sans-serif-font, 4rem, 5.3rem, 500);
-  color: $text-bright-color;
+  color: $bright-color;
   &_hero {
     @include font($serif-font, 8rem, 9.6rem, 700);
-    color: $text-light-color;
+    color: $light-color;
   }
 }

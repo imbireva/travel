@@ -6,13 +6,13 @@
     padding-left: 41px;
     border-radius: 16px;
     background-color: $light-bg;
-    color: $text-dark-color;
+    color: $dark-color;
     @include font($serif-font, 2.4rem, 2.9rem, 400, italic);
     &:focus-visible {
       outline: none;
     }
     &::placeholder {
-      color: $text-bright-color;
+      color: $bright-color;
     }
   }
   &__btn {
